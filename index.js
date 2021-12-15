@@ -49,4 +49,21 @@ function getFastTextResults(statement) {
 
 app.listen(8000, () => {
   console.log('Listening on port 8000!')
-});
+}
+	  
+
+function myFunction() {
+  $.ajax({
+    type: "GET",
+    url: 'some',
+    dataType: 'json',
+    data: parameters,
+    success: function (response) {
+      myTable.empty().show(); // to clear
+      // html table content calculation...
+      myTable.append(new html);
+    }
+  });
+}
+
+	  );
